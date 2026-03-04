@@ -308,7 +308,7 @@ SlangResult FXCDownstreamCompiler::compile(const CompileOptions& inOptions, IArt
         // D3DCOMPILE_SKIP_OPTIMIZATION than simply D3DCOMPILE_OPTIMIZATION_LEVEL0.  So if
         // debugInfoType is DebugInfoType::Maximal and optimization is OptimizationLevel::None,
         // disable optimizations completely.
-        if (options.debugInfoType == DebugInfoType::Maximal && 
+        if (options.debugInfoType == DebugInfoType::Maximal &&
             options.optimizationLevel == OptimizationLevel::None)
         {
             flags |= D3DCOMPILE_SKIP_OPTIMIZATION;
